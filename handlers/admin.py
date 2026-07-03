@@ -12,23 +12,23 @@ router = Router()
 @router.message(Command("all_bookings"))
 async def cmd_all_bookings(message: Message) -> None:
     if message.from_user.id != ADMIN_ID:
-        await message.answer("⛔ Ця команда доступна лише адміністратору.")
+        await message.answer("⛔ This command is only available to the administrator.")
         return
 
     bookings = await get_all_bookings()
     if not bookings:
-        await message.answer("Заявок ще немає.")
+        await message.answer("There are no bookings yet.")
         return
 
-    lines = [f"Усього заявок: {len(bookings)}\n"]
+    lines = [f"Total bookings: {len(bookings)}\n"]
     for b in bookings:
         username = f"@{b.username}" if b.username else "—"
         lines.append(
             f"#{b.id} | {b.status}\n"
-            f"Ім'я: {b.name} | Користувач: {username} (id {b.user_id})\n"
-            f"Дата/час: {b.date} {b.time}\n"
-            f"Опис: {b.description}\n"
-            f"Створено: {b.created_at}\n"
+            f"Name: {b.name} | User: {username} (id {b.user_id})\n"
+            f"Date/time: {b.date} {b.time}\n"
+            f"Description: {b.description}\n"
+            f"Created: {b.created_at}\n"
         )
 
     for chunk in chunk_text("\n".join(lines)):

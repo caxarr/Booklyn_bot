@@ -2,10 +2,16 @@
 
 A Telegram bot for booking consultations / services, built with [aiogram](https://docs.aiogram.dev/) 3 and SQLite.
 
+## Demo
+
+![Booklyn Bot demo](assets/demo.gif)
+
+> Record a short screen capture of a chat with the bot (e.g. with [ScreenToGif](https://www.screentogif.com/), [Kap](https://getkap.co/), or `peek` on Linux) and save it as `assets/demo.gif`. The image above will render automatically once the file is in place.
+
 ## Features
 
 - `/start` — greeting and short explanation of what the bot does
-- `/book` (or the "Записатись" button) — step-by-step booking flow (FSM):
+- `/book` (or the "Book now" button) — step-by-step booking flow (FSM):
   1. Asks for the user's name
   2. Asks for the desired date (`DD.MM`, e.g. `10.07`)
   3. Asks for the desired time (`HH:MM`, e.g. `14:30`)
@@ -32,6 +38,8 @@ Booklyn_bot/
 │   ├── start.py          # /start, /help
 │   ├── booking.py         # booking FSM, /cancel, /my_bookings
 │   └── admin.py            # /all_bookings (admin only)
+├── assets/
+│   └── demo.gif          # chat demo GIF referenced above (add your own)
 ├── requirements.txt
 ├── .env.example
 └── .gitignore
@@ -108,4 +116,4 @@ The bot uses long polling, so no public URL or webhook setup is required.
 ## Notes
 
 - FSM state is kept in memory (`MemoryStorage`); it resets if the bot restarts. For production use with multiple workers, consider `RedisStorage`.
-- All user-facing text is in Ukrainian; adjust the strings in `handlers/` and `keyboards.py` if you need another language.
+- All user-facing bot text is in English; adjust the strings in `handlers/` and `keyboards.py` if you need another language.

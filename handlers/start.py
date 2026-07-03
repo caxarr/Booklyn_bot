@@ -7,13 +7,13 @@ from keyboards import main_menu_keyboard
 router = Router()
 
 WELCOME_TEXT = (
-    "👋 Вітаю!\n\n"
-    "Я бот для запису на консультацію / бронювання послуги.\n\n"
-    "Що я вмію:\n"
-    "• /book або кнопка «Записатись» — оформити нову заявку\n"
-    "• /my_bookings — переглянути ваші активні заявки\n"
-    "• /cancel — скасувати оформлення заявки, що в процесі\n\n"
-    "Щоб почати, натисніть «Записатись» або надішліть /book."
+    "👋 Welcome!\n\n"
+    "I'm a bot for booking a consultation / service.\n\n"
+    "Here's what I can do:\n"
+    "• /book or the \"Book now\" button — create a new booking\n"
+    "• /my_bookings — view your active bookings\n"
+    "• /cancel — cancel a booking that's currently being filled in\n\n"
+    "To get started, tap \"Book now\" or send /book."
 )
 
 

@@ -9,8 +9,8 @@ from aiogram.types import (
 def main_menu_keyboard() -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(text="Записатись")],
-            [KeyboardButton(text="Мої заявки")],
+            [KeyboardButton(text="Book now")],
+            [KeyboardButton(text="My bookings")],
         ],
         resize_keyboard=True,
     )
@@ -20,8 +20,8 @@ def confirmation_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard=[
             [
-                InlineKeyboardButton(text="✅ Підтвердити", callback_data="booking_confirm"),
-                InlineKeyboardButton(text="❌ Скасувати", callback_data="booking_cancel"),
+                InlineKeyboardButton(text="✅ Confirm", callback_data="booking_confirm"),
+                InlineKeyboardButton(text="❌ Cancel", callback_data="booking_cancel"),
             ]
         ]
     )
