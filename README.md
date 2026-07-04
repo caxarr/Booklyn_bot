@@ -6,8 +6,6 @@ A Telegram bot for booking consultations / services, built with [aiogram](https:
 
 <video src="https://github.com/caxarr/Booklyn_bot/raw/main/assets/demo.mp4" controls width="600"></video>
 
-> Record a short screen capture of a chat with the bot (e.g. with [ScreenToGif](https://www.screentogif.com/), [Kap](https://getkap.co/), or `peek` on Linux) and save it as `assets/demo.gif`. The image above will render automatically once the file is in place.
-
 ## Features
 
 - `/start` — greeting and short explanation of what the bot does
@@ -39,7 +37,7 @@ Booklyn_bot/
 │   ├── booking.py         # booking FSM, /cancel, /my_bookings
 │   └── admin.py            # /all_bookings (admin only)
 ├── assets/
-│   └── demo.gif          # chat demo GIF referenced above (add your own)
+│   └── demo.mp4          # chat demo video referenced above
 ├── requirements.txt
 ├── .env.example
 └── .gitignore
