@@ -4,7 +4,7 @@ A Telegram bot for booking consultations / services, built with [aiogram](https:
 
 ## Demo
 
-![Booklyn Bot demo](assets/demo.gif)
+https://github.com/caxarr/Booklyn_bot/assets/demo.mp4
 
 > Record a short screen capture of a chat with the bot (e.g. with [ScreenToGif](https://www.screentogif.com/), [Kap](https://getkap.co/), or `peek` on Linux) and save it as `assets/demo.gif`. The image above will render automatically once the file is in place.
 
@@ -49,17 +49,17 @@ Booklyn_bot/
 
 SQLite table `bookings`:
 
-| Column       | Type    | Notes                                      |
+| Column       | Type    | Notes                                       |
 |--------------|---------|---------------------------------------------|
 | id           | INTEGER | primary key, autoincrement                  |
-| user_id      | INTEGER | Telegram user id                             |
-| username     | TEXT    | Telegram @username (nullable)                |
-| name         | TEXT    | name provided during booking                 |
-| date         | TEXT    | requested date, `DD.MM`                      |
-| time         | TEXT    | requested time, `HH:MM`                      |
-| description  | TEXT    | short description of the request             |
-| status       | TEXT    | `pending` / `confirmed` / `cancelled`         |
-| created_at   | TEXT    | ISO 8601 UTC timestamp                        |
+| user_id      | INTEGER | Telegram user id                            |
+| username     | TEXT    | Telegram @username (nullable)               |
+| name         | TEXT    | name provided during booking                |
+| date         | TEXT    | requested date, `DD.MM`                     |
+| time         | TEXT    | requested time, `HH:MM`                     |
+| description  | TEXT    | short description of the request            |
+| status       | TEXT    | `pending` / `confirmed` / `cancelled`       |
+| created_at   | TEXT    | ISO 8601 UTC timestamp                      |
 
 The database file is created automatically on first run.
 
