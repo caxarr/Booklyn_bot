@@ -4,7 +4,7 @@ A Telegram bot for booking consultations / services, built with [aiogram](https:
 
 ## Demo
 
-<video src="https://github.com/caxarr/Booklyn_bot/raw/main/assets/demo.mp4" controls width="600"></video>
+https://github.com/user-attachments/assets/7cddad19-80c7-4b27-bed7-533f3e4eb1a8
 
 ## Features
 
